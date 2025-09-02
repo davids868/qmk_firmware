@@ -53,19 +53,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                 TO(0)   , KC_SPC  ,     KC_TRNS , _______
 ),
 
-//    ┌─────────┬─────┬────┬─────┬─────┐   ┌──────┬──────┬────┬──────┬────┐
-//    │   no    │ no  │ no │ no  │ no  │   │  no  │  no  │ no │  no  │ no │
-//    ├─────────┼─────┼────┼─────┼─────┤   ├──────┼──────┼────┼──────┼────┤
-//    │         │     │ no │ no  │ no  │   │ left │ down │ up │ rght │ no │
-//    ├─────────┼─────┼────┼─────┼─────┤   ├──────┼──────┼────┼──────┼────┤
-//    │ QK_BOOT │ no  │ no │ no  │ no  │   │  no  │  no  │ no │  no  │ no │
-//    └─────────┴─────┴────┼─────┼─────┤   ├──────┼──────┼────┴──────┴────┘
-//                         │     │     │   │      │      │
-//                         └─────┴─────┘   └──────┴──────┘
+//    ┌─────┬─────┬────┬─────┬─────┐   ┌──────┬──────┬────┬──────┬────┐
+//    │ no  │ no  │ no │ no  │ no  │   │  no  │  no  │ no │  no  │ no │
+//    ├─────┼─────┼────┼─────┼─────┤   ├──────┼──────┼────┼──────┼────┤
+//    │     │     │ no │ no  │ no  │   │ left │ down │ up │ rght │ no │
+//    ├─────┼─────┼────┼─────┼─────┤   ├──────┼──────┼────┼──────┼────┤
+//    │ no  │ no  │ no │ no  │ no  │   │  no  │  no  │ no │  no  │ no │
+//    └─────┴─────┴────┼─────┼─────┤   ├──────┼──────┼────┴──────┴────┘
+//                     │     │     │   │      │      │
+//                     └─────┴─────┘   └──────┴──────┘
 [2] = LAYOUT_split_3x5_2(
   XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX,
   _______ , _______ , XXXXXXX , XXXXXXX , XXXXXXX ,     KC_LEFT , KC_DOWN , KC_UP   , KC_RGHT , XXXXXXX,
-  QK_BOOT , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX,
+  XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX,
                                 _______ , _______ ,     _______ , _______
 ),
 
