@@ -66,22 +66,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , KC_Q    ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , KC_Q   ,
   _______ , _______ , XXXXXXX , XXXXXXX , XXXXXXX ,     KC_LEFT , KC_DOWN , KC_UP   , KC_RGHT , _______,
   XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX,
-                                _______ , _______ ,     _______ , _______
-),
-
-//    ┌─────┬─────┬────┬───────┬─────┐   ┌──────┬──────┬────┬──────┬─────┐
-//    │ no  │ no  │ no │  no   │  q  │   │  no  │  no  │ no │  no  │  q  │
-//    ├─────┼─────┼────┼───────┼─────┤   ├──────┼──────┼────┼──────┼─────┤
-//    │     │     │ no │  no   │ no  │   │ left │ down │ up │ rght │     │
-//    ├─────┼─────┼────┼───────┼─────┤   ├──────┼──────┼────┼──────┼─────┤
-//    │ no  │ no  │ no │  no   │ no  │   │  no  │  no  │ no │  no  │ no  │
-//    └─────┴─────┴────┼───────┼─────┤   ├──────┼──────┼────┴──────┴─────┘
-//                     │ TO(0) │     │   │      │      │
-//                     └───────┴─────┘   └──────┴──────┘
-[6] = LAYOUT_split_3x5_2(
-  XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , KC_Q    ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , KC_Q   ,
-  _______ , _______ , XXXXXXX , XXXXXXX , XXXXXXX ,     KC_LEFT , KC_DOWN , KC_UP   , KC_RGHT , _______,
-  XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX,
                                 TO(0)   , _______ ,     _______ , _______
 ),
 
