@@ -22,35 +22,35 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-//    ┌────┬──────────┬──────────┬──────────┬────────────┬────────────┐   ┌─────────────┬──────────┬────┬───┬──────────┬────┐
-//    │ no │ LT(3, q) │ LT(3, w) │    e     │  LT(4, r)  │     t      │   │      y      │    u     │ i  │ o │    p     │ no │
-//    ├────┼──────────┼──────────┼──────────┼────────────┼────────────┤   ├─────────────┼──────────┼────┼───┼──────────┼────┤
-//    │ no │ GUI_T(a) │ ALT_T(s) │ LT(2, d) │  CTL_T(f)  │     g      │   │      h      │ CTL_T(j) │ k  │ l │ GUI_T(;) │ no │
-//    ├────┼──────────┼──────────┼──────────┼────────────┼────────────┤   ├─────────────┼──────────┼────┼───┼──────────┼────┤
-//    │ no │ LCA_T(z) │    x     │    c     │     v      │     b      │   │      n      │    m     │ ,  │ . │ SFT_T(/) │ no │
-//    └────┴──────────┴──────────┼──────────┼────────────┼────────────┤   ├─────────────┼──────────┼────┼───┴──────────┴────┘
-//                               │    no    │ SFT_T(ent) │ ALL_T(spc) │   │ CTL_T(bspc) │  MO(1)   │ no │
-//                               └──────────┴────────────┴────────────┘   └─────────────┴──────────┴────┘
+//    ┌────┬──────────┬──────────┬──────────┬────────────┬────────────┐   ┌──────────────┬──────────┬────┬───┬──────────┬────┐
+//    │ no │ LT(3, q) │ LT(3, w) │    e     │  LT(4, r)  │     t      │   │      y       │    u     │ i  │ o │    p     │ no │
+//    ├────┼──────────┼──────────┼──────────┼────────────┼────────────┤   ├──────────────┼──────────┼────┼───┼──────────┼────┤
+//    │ no │ GUI_T(a) │ ALT_T(s) │ LT(2, d) │  CTL_T(f)  │     g      │   │      h       │ CTL_T(j) │ k  │ l │ GUI_T(;) │ no │
+//    ├────┼──────────┼──────────┼──────────┼────────────┼────────────┤   ├──────────────┼──────────┼────┼───┼──────────┼────┤
+//    │ no │ LCA_T(z) │    x     │    c     │     v      │     b      │   │      n       │    m     │ ,  │ . │ SFT_T(/) │ no │
+//    └────┴──────────┴──────────┼──────────┼────────────┼────────────┤   ├──────────────┼──────────┼────┼───┴──────────┴────┘
+//                               │    no    │ SFT_T(ent) │ ALL_T(spc) │   │ RCTL_T(bspc) │  MO(1)   │ no │
+//                               └──────────┴────────────┴────────────┘   └──────────────┴──────────┴────┘
 [0] = LAYOUT_split_3x6_3(
-  XXXXXXX , LT(3, KC_Q) , LT(3, KC_W) , KC_E        , LT(4, KC_R)   , KC_T          ,     KC_Y           , KC_U        , KC_I    , KC_O   , KC_P           , XXXXXXX,
-  XXXXXXX , GUI_T(KC_A) , ALT_T(KC_S) , LT(2, KC_D) , CTL_T(KC_F)   , KC_G          ,     KC_H           , CTL_T(KC_J) , KC_K    , KC_L   , GUI_T(KC_SCLN) , XXXXXXX,
-  XXXXXXX , LCA_T(KC_Z) , KC_X        , KC_C        , KC_V          , KC_B          ,     KC_N           , KC_M        , KC_COMM , KC_DOT , SFT_T(KC_SLSH) , XXXXXXX,
-                                        XXXXXXX     , SFT_T(KC_ENT) , ALL_T(KC_SPC) ,     CTL_T(KC_BSPC) , MO(1)       , XXXXXXX
+  XXXXXXX , LT(3, KC_Q) , LT(3, KC_W) , KC_E        , LT(4, KC_R)   , KC_T          ,     KC_Y            , KC_U        , KC_I    , KC_O   , KC_P           , XXXXXXX,
+  XXXXXXX , GUI_T(KC_A) , ALT_T(KC_S) , LT(2, KC_D) , CTL_T(KC_F)   , KC_G          ,     KC_H            , CTL_T(KC_J) , KC_K    , KC_L   , GUI_T(KC_SCLN) , XXXXXXX,
+  XXXXXXX , LCA_T(KC_Z) , KC_X        , KC_C        , KC_V          , KC_B          ,     KC_N            , KC_M        , KC_COMM , KC_DOT , SFT_T(KC_SLSH) , XXXXXXX,
+                                        XXXXXXX     , SFT_T(KC_ENT) , ALL_T(KC_SPC) ,     RCTL_T(KC_BSPC) , MO(1)       , XXXXXXX
 ),
 
-//    ┌────┬─────┬─────┬────┬──────┬─────┐   ┌─────┬─────┬────┬────┬───────┬────┐
-//    │ no │  !  │  @  │ #  │  $   │  %  │   │  ^  │  &  │ *  │ -  │   =   │ no │
-//    ├────┼─────┼─────┼────┼──────┼─────┤   ├─────┼─────┼────┼────┼───────┼────┤
-//    │ no │     │     │ [  │  {   │  (  │   │  )  │  }  │ ]  │ \  │   |   │ no │
-//    ├────┼─────┼─────┼────┼──────┼─────┤   ├─────┼─────┼────┼────┼───────┼────┤
-//    │ no │  `  │ no  │ no │  no  │ no  │   │ no  │ no  │ no │ no │ TO(2) │ no │
-//    └────┴─────┴─────┼────┼──────┼─────┤   ├─────┼─────┼────┼────┴───────┴────┘
-//                     │ no │ lsft │     │   │     │     │ no │
-//                     └────┴──────┴─────┘   └─────┴─────┴────┘
+//    ┌────┬─────┬─────┬────┬──────┬─────────┐   ┌─────────┬─────────┬────┬────┬───────┬────┐
+//    │ no │  !  │  @  │ #  │  $   │    %    │   │    ^    │    &    │ *  │ -  │   =   │ no │
+//    ├────┼─────┼─────┼────┼──────┼─────────┤   ├─────────┼─────────┼────┼────┼───────┼────┤
+//    │ no │     │     │ [  │  {   │    (    │   │    )    │    }    │ ]  │ \  │   |   │ no │
+//    ├────┼─────┼─────┼────┼──────┼─────────┤   ├─────────┼─────────┼────┼────┼───────┼────┤
+//    │ no │  `  │ no  │ no │  no  │ RGB_TOG │   │ CG_LSWP │ CG_LNRM │ no │ no │ TO(2) │ no │
+//    └────┴─────┴─────┼────┼──────┼─────────┤   ├─────────┼─────────┼────┼────┴───────┴────┘
+//                     │ no │ lsft │         │   │         │         │ no │
+//                     └────┴──────┴─────────┘   └─────────┴─────────┴────┘
 [1] = LAYOUT_split_3x6_3(
   XXXXXXX , KC_EXLM , KC_AT   , KC_HASH , KC_DLR  , KC_PERC ,     KC_CIRC , KC_AMPR , KC_ASTR , KC_MINS , KC_EQL  , XXXXXXX,
   XXXXXXX , _______ , _______ , KC_LBRC , KC_LCBR , KC_LPRN ,     KC_RPRN , KC_RCBR , KC_RBRC , KC_BSLS , KC_PIPE , XXXXXXX,
-  XXXXXXX , KC_GRV  , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , TO(2)   , XXXXXXX,
+  XXXXXXX , KC_GRV  , XXXXXXX , XXXXXXX , XXXXXXX , RGB_TOG ,     CG_LSWP , CG_LNRM , XXXXXXX , XXXXXXX , TO(2)   , XXXXXXX,
                                 XXXXXXX , KC_LSFT , _______ ,     _______ , _______ , XXXXXXX
 ),
 
