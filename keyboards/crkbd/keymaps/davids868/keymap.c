@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 //    ┌────┬─────┬─────┬────┬───────┬─────┐   ┌──────┬──────┬────┬──────┬────┬────┐
-//    │ no │ no  │ no  │ no │  no   │ no  │   │  no  │  no  │ no │  no  │ no │ no │
+//    │ no │ no  │ no  │ no │  no   │  q  │   │  no  │  no  │ no │  no  │ no │ no │
 //    ├────┼─────┼─────┼────┼───────┼─────┤   ├──────┼──────┼────┼──────┼────┼────┤
 //    │ no │     │     │ no │  no   │ no  │   │ left │ down │ up │ rght │ no │ no │
 //    ├────┼─────┼─────┼────┼───────┼─────┤   ├──────┼──────┼────┼──────┼────┼────┤
@@ -64,24 +64,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //                     │ no │ TO(0) │     │   │      │      │ no │
 //                     └────┴───────┴─────┘   └──────┴──────┴────┘
 [2] = LAYOUT_split_3x6_3(
-  XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX,
+  XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , KC_Q    ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX,
   XXXXXXX , _______ , _______ , XXXXXXX , XXXXXXX , XXXXXXX ,     KC_LEFT , KC_DOWN , KC_UP   , KC_RGHT , XXXXXXX , XXXXXXX,
   XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX ,     XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX , XXXXXXX,
                                 XXXXXXX , TO(0)   , _______ ,     _______ , _______ , XXXXXXX
 ),
 
-//    ┌────┬────┬──────┬──────┬────────────┬─────┐   ┌────┬─────┬────┬───┬────┬────┐
-//    │ no │ no │ mprv │ mply │    mnxt    │ no  │   │ +  │  7  │ 8  │ 9 │ no │ no │
-//    ├────┼────┼──────┼──────┼────────────┼─────┤   ├────┼─────┼────┼───┼────┼────┤
-//    │ no │ no │  no  │ vold │    volu    │ no  │   │ -  │  4  │ 5  │ 6 │ no │ no │
-//    ├────┼────┼──────┼──────┼────────────┼─────┤   ├────┼─────┼────┼───┼────┼────┤
-//    │ no │ no │  no  │ bRID │    bRIU    │ no  │   │ 0  │  1  │ 2  │ 3 │ .  │ no │
-//    └────┴────┴──────┼──────┼────────────┼─────┤   ├────┼─────┼────┼───┴────┴────┘
-//                     │  no  │ SFT_T(ent) │ spc │   │ no │     │ no │
-//                     └──────┴────────────┴─────┘   └────┴─────┴────┘
+//    ┌────┬─────┬──────┬──────┬────────────┬─────┐   ┌────┬─────┬────┬───┬────┬────┐
+//    │ no │ no  │ mprv │ mply │    mnxt    │  q  │   │ +  │  7  │ 8  │ 9 │ no │ no │
+//    ├────┼─────┼──────┼──────┼────────────┼─────┤   ├────┼─────┼────┼───┼────┼────┤
+//    │ no │     │      │ vold │    volu    │ no  │   │ -  │  4  │ 5  │ 6 │ no │ no │
+//    ├────┼─────┼──────┼──────┼────────────┼─────┤   ├────┼─────┼────┼───┼────┼────┤
+//    │ no │ no  │  no  │ bRID │    bRIU    │ no  │   │ 0  │  1  │ 2  │ 3 │ .  │ no │
+//    └────┴─────┴──────┼──────┼────────────┼─────┤   ├────┼─────┼────┼───┴────┴────┘
+//                      │  no  │ SFT_T(ent) │ spc │   │ no │     │ no │
+//                      └──────┴────────────┴─────┘   └────┴─────┴────┘
 [3] = LAYOUT_split_3x6_3(
-  XXXXXXX , XXXXXXX , KC_MPRV , KC_MPLY , KC_MNXT       , XXXXXXX ,     KC_PLUS , KC_7    , KC_8    , KC_9 , XXXXXXX , XXXXXXX,
-  XXXXXXX , XXXXXXX , XXXXXXX , KC_VOLD , KC_VOLU       , XXXXXXX ,     KC_MINS , KC_4    , KC_5    , KC_6 , XXXXXXX , XXXXXXX,
+  XXXXXXX , XXXXXXX , KC_MPRV , KC_MPLY , KC_MNXT       , KC_Q    ,     KC_PLUS , KC_7    , KC_8    , KC_9 , XXXXXXX , XXXXXXX,
+  XXXXXXX , _______ , _______ , KC_VOLD , KC_VOLU       , XXXXXXX ,     KC_MINS , KC_4    , KC_5    , KC_6 , XXXXXXX , XXXXXXX,
   XXXXXXX , XXXXXXX , XXXXXXX , KC_BRID , KC_BRIU       , XXXXXXX ,     KC_0    , KC_1    , KC_2    , KC_3 , KC_DOT  , XXXXXXX,
                                 XXXXXXX , SFT_T(KC_ENT) , KC_SPC  ,     XXXXXXX , _______ , XXXXXXX
 ),
